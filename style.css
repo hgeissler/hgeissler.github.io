@@ -117,11 +117,10 @@ body {
   background: #f7444e;
 }
 
-#footerButton a:hover,
+#footerButton a:hover p,
 #footerButton a:focus {
   font-size: 1.2em;
 }
-
 
 #mainName {
   font-family: 'Comfortaa';
