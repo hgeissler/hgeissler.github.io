@@ -187,6 +187,7 @@ body {
   position: absolute;
   top: 90%;
   font-family: 'Comfortaa';
+  opacity: 0.4;
 }
 
 .modal-content,
