@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>hgeissler Webspace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hiddenContainer" class="modal">
+    <span id="close">&times;</span>
+    <img src="src/largeMe.jpg" alt="Me on a bike tour" class="modal-content">
+    <div id="caption"></div>
+  </div>
+
+  <div id="wrapper">
+    <div id="headerMenu">
+      <nav>
+        <ul class="navlinks">
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="main">
+      <div id="pic"></div>
+      <div id="mainName">
+        <img id="smallMe" src="src/me.png" alt="Me on a bike tour">
+        <p>Hannes Geissler</p>
+      </div>
+      <div id="description">Hello there, this is my online portfolio. I am a Software Engineer based in Hanover, Germany. I enjoy programming since 2017<br>focusing on  Web Development and Coding in Python. </div>
+    </div>
+    <div id="footer">
+      <div id="footerButton">
+        <a href="#">
+          <div id="footerIcon"></div>
+          <p>Latest Works</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var smallMe = document.getElementById('smallMe');
+    var hiddenContainer = document.getElementById('hiddenContainer');
+    var captionText = document.getElementById('caption');
+
+    smallMe.onclick = function() {
+      hiddenContainer.style.display = "block";
+      captionText.innerHTML = this.alt;
+    }
+
+    var spanClose = document.getElementById("close");
+    spanClose.onclick = function() {
+      hiddenContainer.style.display = "none";
+    }
+  </script>
+</body>
+</html>
