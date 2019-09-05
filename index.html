@@ -10,7 +10,7 @@
 <body>
   <div id="hiddenContainer" class="modal">
     <span id="close">&times;</span>
-    <img src="src/largeMe.jpg" alt="Me on a bike tour" class="modal-content">
+    <img src="img/largeMe.jpg" alt="Me on a bike tour" class="modal-content">
   </div>
 
   <div id="wrapper">
@@ -26,7 +26,7 @@
     <div id="main">
       <div id="pic"></div>
       <div id="mainName">
-        <img id="smallMe" src="src/me.png" alt="Me on a bike tour">
+        <img id="smallMe" src="img/me.png" alt="Me on a bike tour">
         <p>Hannes Geissler</p>
       </div>
       <div id="description">
@@ -43,29 +43,6 @@
     </div>
   </div>
 
-  <script>
-    var smallMe = document.getElementById('smallMe');
-    var hiddenContainer = document.getElementById('hiddenContainer');
-    var captionText = document.getElementById('caption');
-
-    smallMe.onclick = function() {
-      hiddenContainer.style.display = "block";
-      captionText.innerHTML = this.alt;
-    }
-
-    var spanClose = document.getElementById("close");
-    spanClose.onclick = function() {
-      hiddenContainer.style.display = "none";
-    }
-
-    var footerText = document.getElementById('footerText');
-    var footerButton = document.querySelector('#footerButton');
-    footerButton.onmouseover = function() {
-      footerText.style.fontSize = "1.2em"
-    }
-    footerButton.onmouseout = function() {
-      footerText.style.fontSize = "1.1em"
-    }
-  </script>
+  <script src="main.js"></script>
 </body>
 </html>

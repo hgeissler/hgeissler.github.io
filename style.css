@@ -50,7 +50,7 @@ body {
 }
 
 #pic{
-  background-image: url(src/webdev.svg);
+  background-image: url(img/webdev.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-blend-mode: inherit;
@@ -70,7 +70,7 @@ body {
 #footerIcon {
   height: 2em;
   width: 60%;
-  background-image: url(src/downarrow.svg);
+  background-image: url(img/downarrow.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
