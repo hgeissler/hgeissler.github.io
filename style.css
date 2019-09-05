@@ -104,17 +104,23 @@ body {
   text-decoration: none;
   text-align: center;
   color: #f7f8f3;
-  padding: 1em;
+  padding: 0.5em 0.7em;
   margin: 1em;
   display: block;
   font-size: 1.1em;
-  text-transform: uppercase;
-  border-radius: 30px
+  /* border: 1px solid white; */
+  border-radius: 30px;
 }
 
 .navlinks li a:hover,
 .navlinks li a:focus {
   background: #f7444e;
+}
+.navlinks li a:active{
+  background: #cb3840;
+}
+.navlinks li a:not(:hover) {
+  background: #002c3e;
 }
 
 #mainName {
