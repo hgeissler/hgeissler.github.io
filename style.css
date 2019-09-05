@@ -45,6 +45,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  cursor: default;
 }
 
 #pic{
@@ -117,8 +118,7 @@ body {
   background: #f7444e;
 }
 
-#footerButton a:hover p,
-#footerButton a:focus {
+#footerButton p:hover {
   font-size: 1.2em;
 }
 
