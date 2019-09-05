@@ -246,12 +246,11 @@ body {
 @media (max-width: 600px) {
   #wrapper {
     display: grid;
-    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-columns: auto;
     grid-template-rows: 3em auto 3em;
-    grid-template-areas: "headerMenu headerMenu headerMenu"
-                         "main main main"
-                         "footer footer footer";
-    grid-gap: 1em;
+    grid-template-areas: "headerMenu"
+                         "main"
+                         "footer";
   }
   .navlinks li a {
     margin: 1em 0 0.5em 0;
