@@ -226,7 +226,7 @@ body {
                          "footer footer footer"
   }
   .navlinks li a {
-    margin: 1em 0;
+    margin: 1em 0.5em;
   }
   #mainName {
     flex-flow: column;
