@@ -11,9 +11,9 @@ body {
 
 #wrapper {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 10vw 80vw 10vw;
   grid-template-rows: 20vh 65vh 15vh;
-  grid-template-areas: "headerLogo headerMenu ."
+  grid-template-areas: ". headerMenu ."
                        ". main ."
                        ". footer ."
 }
@@ -133,7 +133,6 @@ body {
 #mainName p {
   margin: 0;
   letter-spacing: 0.1em;
-  padding-left: 10px;
 }
 
 #mainName img {
@@ -220,12 +219,16 @@ body {
 
 #description {
   width: 90%;
+  margin-bottom: 20px;
+}
+
+#smallMe {
+  margin: 20px 20px 20px 0;
 }
 
 @media (max-width: 960px) {
   #wrapper {
     display: grid;
-    grid-template-columns: 10vw 80vw 10vw;
     grid-template-rows: auto 80vw auto;
     grid-template-areas: "headerMenu headerMenu headerMenu"
                          "main main main"
@@ -237,6 +240,9 @@ body {
   #mainName {
     flex-flow: column;
   }
+  #description {
+    width: 100%;
+  }
 }
 @media (max-width: 600px) {
   #wrapper {
@@ -246,9 +252,7 @@ body {
     grid-template-areas: "headerMenu"
                          "main"
                          "footer";
-  }
-  .navlinks li a {
-    margin: 1em 0 0.5em 0;
+    margin-top: 1em;
   }
 }
 @media (min-width: 1904px) {
@@ -259,9 +263,6 @@ body {
     grid-template-areas: "headerMenu"
                          "main"
                          "footer";
-  }
-  .navlinks li a {
-    margin: 1em 0 0.5em 0;
   }
   #headerMenu {
     align-items: flex-end;
