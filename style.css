@@ -225,3 +225,34 @@ body {
 #description {
   width: 80%;
 }
+
+@media (max-width: 1024px) {
+  #wrapper {
+    display: grid;
+    grid-template-columns: 15vw 75vw 10vw;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: "headerMenu headerMenu headerMenu"
+                         "main main main"
+                         "footer footer footer"
+  }
+  .navlinks li a {
+    margin: 1em 0;
+  }
+  #mainName {
+    flex-flow: column;
+  }
+}
+@media (max-width: 600px) {
+  #wrapper {
+    display: grid;
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: "headerMenu headerMenu headerMenu"
+                         "main main main"
+                         "footer footer footer"
+  }
+  .navlinks li a {
+    margin: 1em 0 0.5em 0;
+  }
+}
+
