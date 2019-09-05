@@ -246,7 +246,7 @@ body {
   #wrapper {
     display: grid;
     grid-template-columns: 10vw 80vw 10vw;
-    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-rows: auto;
     grid-template-areas: "headerMenu headerMenu headerMenu"
                          "main main main"
                          "footer footer footer"
