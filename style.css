@@ -228,11 +228,11 @@ body {
   width: 80%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 960px) {
   #wrapper {
     display: grid;
-    grid-template-columns: 15vw 75vw 10vw;
-    grid-template-rows: 3em auto 3em;
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-rows: auto 80vw auto;
     grid-template-areas: "headerMenu headerMenu headerMenu"
                          "main main main"
                          "footer footer footer"
@@ -255,6 +255,25 @@ body {
   }
   .navlinks li a {
     margin: 1em 0 0.5em 0;
+  }
+}
+@media (min-width: 1904px) {
+  #wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10vh 600px 10vh;
+    grid-template-areas: "headerMenu"
+                         "main"
+                         "footer";
+  }
+  .navlinks li a {
+    margin: 1em 0 0.5em 0;
+  }
+  #headerMenu {
+    align-items: flex-end;
+  }
+  #footer{
+    align-items: flex-start;
   }
 }
 
