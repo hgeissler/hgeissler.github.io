@@ -37,7 +37,7 @@
       <div id="footerButton">
         <a href="#">
           <div id="footerIcon"></div>
-          <p>Latest Works</p>
+          <p id="footerText">Latest Works</p>
         </a>
       </div>
     </div>
@@ -56,6 +56,15 @@
     var spanClose = document.getElementById("close");
     spanClose.onclick = function() {
       hiddenContainer.style.display = "none";
+    }
+
+    var footerText = document.getElementById('footerText');
+    var footerButton = document.querySelector('#footerButton');
+    footerButton.onmouseover = function() {
+      footerText.style.fontSize = "1.2em"
+    }
+    footerButton.onmouseout = function() {
+      footerText.style.fontSize = "1.1em"
     }
   </script>
 </body>

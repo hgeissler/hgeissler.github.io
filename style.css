@@ -11,7 +11,7 @@ body {
 
 #wrapper {
   display: grid;
-  grid-template-columns: 20vw 60vw 20vw;
+  grid-template-columns: auto;
   grid-template-rows: 20vh 65vh 15vh;
   grid-template-areas: "headerLogo headerMenu ."
                        ". main ."
@@ -80,8 +80,6 @@ body {
 #footer p {
   margin-top: 2px;
   font-size: 1.1em;
-}
-#footerButton a p {
   text-decoration: none;
   color: #f7444e;
 }
@@ -117,10 +115,6 @@ body {
 .navlinks li a:hover,
 .navlinks li a:focus {
   background: #f7444e;
-}
-
-#footerButton p:hover {
-  font-size: 1.2em;
 }
 
 #mainName {
