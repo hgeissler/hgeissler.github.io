@@ -46,6 +46,7 @@ body {
   align-items: center;
   text-align: center;
   cursor: default;
+  margin: 1em auto;
 }
 
 #pic{
