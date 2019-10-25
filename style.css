@@ -49,7 +49,7 @@ body {
   margin: 1em auto;
 }
 #footer {
-  margin: 0 auto;
+  margin: 18px auto;
 }
 
 #pic{
@@ -58,7 +58,7 @@ body {
   background-size: 100%;
   background-blend-mode: inherit;
   background-position-x: center;
-  display: block;
+  flex-shrink: 0;
   height: 200px;
   width: 270px;
 }
@@ -111,6 +111,7 @@ body {
   justify-content: center;
   flex-flow: row;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 #mainName p {
@@ -245,22 +246,60 @@ body {
 }
 
 
+#burgerMenu {
+  display: none;
+}
+
 @media (max-width: 960px) {
   #wrapper {
     display: grid;
-    grid-template-rows: auto 80vw auto;
+    grid-template-rows: auto auto auto;
     grid-template-areas: "headerMenu headerMenu headerMenu"
                          "main main main"
                          "footer footer footer"
   }
-  .navlinks li a {
-    margin: 1em 0.5em;
+  
+  .navlinks {
+    display: none;
   }
+
+  #headerMenu {
+    justify-content: flex-end;
+  }
+
+  #burgerMenu {
+    display: block;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  
+  #burgerMenu img {
+    height: 4em;
+    margin: 1em;
+  }
+
+  #headerMenu nav {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+  }
+
+  .navlinksToggleShow {
+    display: flex;
+    flex-flow: column;
+    background: #002c3e;
+    z-index: 2;
+    border-radius: 0%;
+  }
+
   #mainName {
     flex-flow: column;
+    margin-left: 18px;
+    margin-right: 18px;
   }
   #description {
-    width: 100%;
+    margin-left: 18px;
+    margin-right: 18px;
   }
   #smallMe {
     margin: 20px;
@@ -270,13 +309,20 @@ body {
   #wrapper {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 3em auto 3em;
+    grid-template-rows: auto auto auto;
     grid-template-areas: "headerMenu"
                          "main"
                          "footer";
     margin-top: 1em;
   }
+  #mainName {
+    font-size: 2.7em;
+  }
+  #description {
+    font-size: 0.9em;
+  }
 }
+
 @media (min-width: 3400px) {
   #wrapper {
     display: grid;

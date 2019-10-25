@@ -26,3 +26,11 @@ window.onload = function(){
     }
   };
 };
+
+function toggleLinks() {
+  let navlinks = document.querySelector('.navlinks');
+  navlinks.classList.toggle('navlinksToggleShow');
+}
+
+document.querySelector('#burgerMenu')
+  .addEventListener('click', toggleLinks);
