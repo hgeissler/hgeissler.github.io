@@ -13,10 +13,10 @@ spanClose.onclick = function() {
 var footerText = document.getElementById('footerText');
 var footerButton = document.querySelector('#footerButton');
 footerButton.onmouseover = function() {
-  footerText.style.fontSize = "1.2em";
+  footerText.style.fontSize = "1em";
 }
 footerButton.onmouseout = function() {
-  footerText.style.fontSize = "1.1em";
+  footerText.style.fontSize = "0.9em";
 }
 
 window.onload = function(){

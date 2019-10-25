@@ -60,30 +60,6 @@ body {
   width: 270px;
 }
 
-#footerButton {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-#footerIcon {
-  height: 2em;
-  width: 60%;
-  background-image: url(img/downarrow.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: #f7f8f3;
-  margin-left: 20%
-}
-#footer p {
-  margin-top: 2px;
-  font-size: 1.1em;
-  text-decoration: none;
-  color: #f7444e;
-}
-
 .navlinks {
   margin: 0;
   list-style: none;
@@ -92,12 +68,6 @@ body {
   flex-flow: row;
   justify-content: center;
   align-items: center;
-}
-
-#footerButton a {
-  text-decoration: none;
-  text-align: center;
-  color: #f7f8f3;
 }
 
 .navlinks li a {
@@ -109,6 +79,11 @@ body {
   display: block;
   font-size: 1.1em;
   border-radius: 30px;
+}
+
+.navlinks li a.home {
+  font-size: 1.3em;
+  text-transform: uppercase;
 }
 
 .navlinks li a:hover,
@@ -217,6 +192,56 @@ body {
   margin: 20px 20px 20px 0;
 }
 
+#footerButton {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+#footerIcon {
+  height: 24px;
+  width: 24px;
+  background-image: url(img/info-24px.svg);
+  /* background-size: 100%; */
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #f7f8f3;
+  /* margin-left: 20% */
+}
+#footerText {
+  margin-top: 2px;
+  color: #f7444e;
+}
+
+#footerButton {
+  position: relative;
+}
+#footerButton:after {
+  content: attr(data-tooltip);
+  width: 300px;
+  position: absolute;
+  bottom: 130%;
+  left: 40%;
+  background: #f7444e;
+  padding: 5px 15px;
+  color: #f7f8f3;
+  border-radius        : 10px;
+  opacity: 0;
+  transition: all 0.5s ease;
+  font-size: 0.9em;
+}
+#footerButton:hover:after {
+  bottom: 100%;
+}
+#footerButton:hover:before {
+  bottom: 70%;
+}
+#footerButton:hover:after, a:hover:before {
+  opacity: 1;
+}
+
+
 @media (max-width: 960px) {
   #wrapper {
     display: grid;
@@ -261,9 +286,4 @@ body {
   #footer{
     align-items: flex-start;
   }
-}
-
-.navlinks li a.home {
-  font-size: 1.3em;
-  text-transform: uppercase;
 }
