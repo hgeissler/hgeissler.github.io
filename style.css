@@ -259,6 +259,9 @@ body {
   #description {
     width: 100%;
   }
+  #smallMe {
+    margin: 20px;
+  }
 }
 @media (max-width: 600px) {
   #wrapper {
