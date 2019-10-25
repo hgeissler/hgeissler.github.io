@@ -48,6 +48,9 @@ body {
   cursor: default;
   margin: 1em auto;
 }
+#footer {
+  margin: 0 auto;
+}
 
 #pic{
   background-image: url(img/webdev.svg);
@@ -274,14 +277,15 @@ body {
     margin-top: 1em;
   }
 }
-@media (min-width: 1904px) {
+@media (min-width: 3400px) {
   #wrapper {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 10vh 600px 10vh;
+    grid-template-rows: auto 60vh auto;
     grid-template-areas: "headerMenu"
                          "main"
                          "footer";
+    align-items: center;
   }
   #headerMenu {
     align-items: flex-end;
