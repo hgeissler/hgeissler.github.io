@@ -162,10 +162,10 @@ body {
   display: none;
   position: fixed;
   z-index: 1;
-  left: 50%;
-  top: 50%;
-  margin-top: -230px;
-  margin-left: -230px;
+  left: 50vw;
+  top: 50vh;
+  margin-top: -260px;
+  margin-left: -260px;
   background-color: #00212f;
   border-radius: 7px;
 }
@@ -267,28 +267,45 @@ body {
   opacity: 1;
 }
 
-
 #burgerMenu {
   display: none;
 }
 
 @media (max-width: 960px) {
   #wrapper {
-    display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "headerMenu headerMenu headerMenu"
-                         "main main main"
-                         "footer footer footer"
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #headerMenu {
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    background-color: #002839;
+    z-index: 1;
   }
   
   .navlinks {
     display: none;
   }
 
-  #headerMenu {
-    justify-content: flex-end;
+  .navlinks li {
+    background-color: #002839;
   }
 
+  .navlinks li a {
+    color: #f7444e;
+    margin: 0.5em;
+    margin-right: 1em;
+    border-radius: 0;
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #f7444e;
+  }
+  
   #burgerMenu {
     display: block;
     cursor: pointer;
@@ -297,7 +314,7 @@ body {
   
   #burgerMenu img {
     height: 4em;
-    margin: 1em;
+    margin: 0em 1em;
   }
 
   #headerMenu nav {
@@ -326,22 +343,38 @@ body {
   #smallMe {
     margin: 20px;
   }
+
+  #footerButton:after {
+    width: 260px;
+  }
 }
 @media (max-width: 600px) {
-  #wrapper {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "headerMenu"
-                         "main"
-                         "footer";
-    margin-top: 1em;
-  }
   #mainName {
     font-size: 2.7em;
   }
   #description {
     font-size: 0.9em;
+  }
+
+  .modal {
+    left: calc(50vw - 145px);
+    top: calc(50vh - 145px);
+    margin-top: 0;
+    margin-left: 0;
+  }
+  
+  .modal-content {
+    margin: 15px;
+    width: 260px;
+  }
+
+  #close {
+    top: 5px;
+    right: 20px;
+  }
+
+  #footerButton:after {
+    width: 140px;
   }
 }
 
