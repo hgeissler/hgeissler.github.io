@@ -74,6 +74,14 @@ body {
   margin: 18px auto;
 }
 
+#selectedNav {
+  pointer-events: none;
+  border-radius: 0px;
+  padding: 3px;
+  border-bottom: 2px solid #f7444e;
+  text-transform: uppercase;  
+}
+
 #pic{
   background-image: url(img/webdev.svg);
   background-repeat: no-repeat;
@@ -103,12 +111,11 @@ body {
   margin: 1em;
   display: block;
   font-size: 1.1em;
-  border-radius: 30px;
-}
-
-.navlinks li a.home {
-  font-size: 1.3em;
+  border-radius: 10px;
+  letter-spacing: 2px;
   text-transform: uppercase;
+  transition: 0.7s;
+  margin: 5px;
 }
 
 .navlinks li a:hover,
