@@ -242,11 +242,12 @@ body {
 }
 
 #description {
+  font-family: "Roboto Condensed";
   width: 90%;
   margin-bottom: 20px;
   font-size: 1.1em;
-  letter-spacing: 1px;
-  color: white;
+  letter-spacing: 2px;
+  color: #f7f8f3;
 }
 
 #smallMe {
@@ -346,7 +347,7 @@ a:hover:before {
     height: 35px;
     line-height: 35px;
     border: 1px solid #f7444e;
-    transition: all 5s;
+    transition: all 0.5s;
   }
   .navlinks li a:hover,
   .navlinks li a:focus {
