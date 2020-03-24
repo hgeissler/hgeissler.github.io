@@ -1,2 +1,2 @@
-- navlinks sticky machen
+- navlinks, 'this page' sticky machen
 - kontakt: email -> hover: copy to clipboard; xing followlink
