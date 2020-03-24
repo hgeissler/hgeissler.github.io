@@ -1,0 +1,2 @@
+- navlinks sticky machen
+- kontakt: email -> hover: copy to clipboard; xing followlink

@@ -42,7 +42,7 @@ body {
 #wrapper {
   display: grid;
   grid-template-columns: 10vw 80vw 10vw;
-  grid-template-rows: 20vh 65vh 15vh;
+  grid-template-rows: 15vh 70vh 15vh;
   grid-template-areas:
     ". headerMenu ."
     ". main ."
@@ -432,5 +432,11 @@ a:hover:before {
 
   #footerButton:after {
     width: 140px;
+  }
+}
+
+@media (min-width: 2000px) {
+  #wrapper {
+    grid-template-rows: 20vh 60vh 20vh;
   }
 }
