@@ -244,7 +244,7 @@ body {
 }
 
 #description {
-  font-family: 'Roboto Condensed';
+  /* font-family: 'Roboto Condensed'; */
   width: 90%;
   margin-bottom: 20px;
   font-size: 1.1em;
