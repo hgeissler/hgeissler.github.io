@@ -63,11 +63,9 @@ body {
 }
 #main {
   min-height: calc(100vh - 150px);
+  margin: 1em auto;
 }
 
-#footer {
-  grid-area: footer;
-}
 #main,
 #footer {
   display: flex;
@@ -76,10 +74,15 @@ body {
   align-items: center;
   text-align: center;
   cursor: default;
-  margin: 1em auto;
 }
 #footer {
-  margin: 18px auto;
+  background-color: #002c3e;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0 0 0;
   height: 90px;
 }
 
@@ -189,7 +192,7 @@ body {
   top: 50vh;
   margin-top: -260px;
   margin-left: -260px;
-  background-color: #002839;
+  background-color: #002c3e;
   border-radius: 7px;
 }
 
@@ -309,6 +312,34 @@ a:hover:before {
 }
 
 @media (max-width: 960px) {
+  #mainName {
+    flex-flow: column;
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+  #description {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+  #smallMe {
+    margin: 20px;
+  }
+
+  #footerButton:after {
+    width: 260px;
+  }
+
+  #footer {
+    box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    height: 70px;
+    background-color: #002839;
+  }
+  #footerText {
+    margin: 0;
+  }
+}
+@media (max-width: 600px) {
   #selectedNav {
     display: none;
   }
@@ -322,11 +353,11 @@ a:hover:before {
 
   #headerMenu {
     justify-content: flex-end;
-    position: fixed;
+    position: sticky;
     top: 0;
-    background-color: #002839;
+    background-color: #002c3e;
     z-index: 1;
-    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15); */
   }
 
   .navlinks {
@@ -351,7 +382,7 @@ a:hover:before {
   }
   .navlinks li a:hover,
   .navlinks li a:focus {
-    color: #002839;
+    color: #002c3e;
   }
   .navlinks li a:active {
     background: #cb3840;
@@ -377,7 +408,7 @@ a:hover:before {
   .navlinksToggleShow {
     /* muss noch transition, 
     sollte mit height 0-x oder opacity 0-1 gehen */
-    background-color: #002839;
+    background-color: #002c3e;
     display: flex;
     flex-flow: column;
     z-index: 2;
@@ -386,26 +417,12 @@ a:hover:before {
     width: 100%;
     top: 100%;
     left: 0px;
+    box-shadow: 0 0.25rem 0.75rem -0.3rem rgba(0, 0, 0, 0.15);
+  }
+  .bottom-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
   }
 
-  #mainName {
-    flex-flow: column;
-    margin-left: 18px;
-    margin-right: 18px;
-  }
-  #description {
-    margin-left: 18px;
-    margin-right: 18px;
-  }
-  #smallMe {
-    margin: 20px;
-  }
-
-  #footerButton:after {
-    width: 260px;
-  }
-}
-@media (max-width: 600px) {
   #mainName {
     font-size: 2.7em;
   }
@@ -441,7 +458,7 @@ a:hover:before {
   }
 }
 
-@media (min-width: 961px) {
+@media (min-width: 601px) {
   #headerMenu {
     align-items: flex-start;
     z-index: 9;
@@ -451,17 +468,6 @@ a:hover:before {
   nav {
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.25);
     width: 100%;
-    background-color: #002839;
+    background-color: #002c3e;
   }
-}
-
-#footer {
-  background-color: #002c3e;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  margin: 0;
-  padding: 10px 0 0 0;
-  /* box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.05); */
 }
