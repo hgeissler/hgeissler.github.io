@@ -141,7 +141,7 @@ body {
 .navlinks li a:focus {
   background: #f7444e;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.7s;
+  transition: all 0.6s ease-out;
 }
 .navlinks li a:active {
   background: #cb3840;
