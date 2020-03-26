@@ -40,13 +40,11 @@ body {
 }
 
 #wrapper {
-  display: grid;
-  grid-template-columns: 10vw 80vw 10vw;
-  grid-template-rows: 15vh 70vh 15vh;
-  grid-template-areas:
-    'headerMenu headerMenu headerMenu'
-    '. main .'
-    '. footer .';
+  display: flex;
+  flex-flow: column;
+  max-width: 900px;
+  margin: 0 auto;
+  justify-content: space-around;
 }
 
 #headerLogo {
@@ -58,13 +56,13 @@ body {
   font-size: 1.1em;
 }
 #headerMenu {
-  grid-area: headerMenu;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 60px;
 }
 #main {
-  grid-area: main;
+  min-height: calc(100vh - 150px);
 }
 
 #footer {
@@ -82,6 +80,7 @@ body {
 }
 #footer {
   margin: 18px auto;
+  height: 90px;
 }
 
 #selectedNav {
@@ -323,10 +322,11 @@ a:hover:before {
 
   #headerMenu {
     justify-content: flex-end;
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: #002839;
     z-index: 1;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
   }
 
   .navlinks {
@@ -444,11 +444,24 @@ a:hover:before {
 @media (min-width: 961px) {
   #headerMenu {
     align-items: flex-start;
-  }
-  nav {
-    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
-    width: 100%;
+    z-index: 9;
     position: sticky;
     top: 0;
   }
+  nav {
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.25);
+    width: 100%;
+    background-color: #002839;
+  }
+}
+
+#footer {
+  background-color: #002c3e;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0 0 0;
+  /* box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.05); */
 }
