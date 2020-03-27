@@ -41,14 +41,20 @@ body {
 
 #wrapper {
   display: flex;
-  flex-flow: column;
-  max-width: 900px;
+  flex-flow: row;
   margin: 0 auto;
-  justify-content: space-around;
+  background-image: url('img/main_bg_big.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.25);
+  min-height: calc(100vh - 150px);
+}
+
+#container {
+  max-width: 2000px;
 }
 
 #headerLogo {
-  grid-area: headerLogo;
   text-align: center;
   display: flex;
   align-items: center;
@@ -61,10 +67,6 @@ body {
   justify-content: center;
   height: 60px;
 }
-#main {
-  min-height: calc(100vh - 150px);
-  margin: 1em auto;
-}
 
 #main,
 #footer {
@@ -75,15 +77,23 @@ body {
   text-align: center;
   cursor: default;
 }
+
+#main {
+  min-height: calc(100vh - 150px);
+  margin: 1em;
+  justify-content: center;
+}
+
 #footer {
-  background-color: #002c3e;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   margin: 0;
-  padding: 10px 0 0 0;
-  height: 90px;
+  box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.15);
+  padding: 0;
+  height: 70px;
+  background-color: #002839;
 }
 
 #selectedNav {
@@ -96,16 +106,16 @@ body {
   text-transform: uppercase;
 }
 
-#pic {
+/* #pic {
   background-image: url(img/webdev.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-blend-mode: inherit;
   background-position-x: center;
   flex-shrink: 0;
-  height: 200px;
-  width: 270px;
-}
+  height: 100px;
+  width: 135px;
+} */
 
 .navlinks {
   margin: 0;
@@ -250,6 +260,7 @@ body {
   font-size: 1.1em;
   letter-spacing: 2px;
   color: #f7f8f3;
+  text-align: left;
 }
 
 #smallMe {
@@ -329,14 +340,13 @@ a:hover:before {
     width: 260px;
   }
 
-  #footer {
-    box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.15);
-    padding: 0;
-    height: 70px;
-    background-color: #002839;
-  }
   #footerText {
     margin: 0;
+  }
+  #description,
+  #mainName p {
+    margin: 0 auto;
+    text-align: center;
   }
 }
 @media (max-width: 600px) {
@@ -452,12 +462,6 @@ a:hover:before {
   }
 }
 
-@media (min-width: 2000px) {
-  #wrapper {
-    grid-template-rows: 20vh 60vh 20vh;
-  }
-}
-
 @media (min-width: 601px) {
   #headerMenu {
     align-items: flex-start;
@@ -469,5 +473,11 @@ a:hover:before {
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.25);
     width: 100%;
     background-color: #002c3e;
+  }
+}
+
+@media (min-width: 961px) {
+  #main {
+    margin-left: 100px;
   }
 }
