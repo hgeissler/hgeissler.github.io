@@ -99,7 +99,7 @@ body {
 }
 #selectedNavText {
   padding: 3px;
-  border-bottom: 2px solid #f7444e;
+  border-bottom: 2px solid #9e4770;
   text-transform: uppercase;
 }
 
@@ -147,7 +147,7 @@ body {
 
 .navlinks li a:hover,
 .navlinks li a:focus {
-  background: #f7444e;
+  background: #9e4770;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.6s ease-out;
 }
@@ -251,7 +251,7 @@ body {
 
 #close:hover,
 #close:focus {
-  color: #f7444e;
+  color: #9e4770;
   text-decoration: none;
   cursor: pointer;
 }
@@ -289,7 +289,7 @@ body {
 }
 #footerText {
   margin-top: 2px;
-  color: #f7444e;
+  color: #9e4770;
   margin-bottom: 0;
 }
 
@@ -302,7 +302,7 @@ body {
   position: absolute;
   bottom: 130%;
   left: 40%;
-  background: #f7444e;
+  background: #9e4770;
   padding: 5px 15px;
   color: #f7f8f3;
   border-radius: 10px;
@@ -386,7 +386,7 @@ a:hover:before {
   }
 
   .navlinks li a {
-    color: #f7444e;
+    color: #9e4770;
     margin: 0.5em;
     margin-right: 1em;
     margin-left: 1em;
@@ -394,7 +394,7 @@ a:hover:before {
     width: 120px;
     height: 35px;
     line-height: 35px;
-    border: 1px solid #f7444e;
+    border: 1px solid #9e4770;
     transition: all 0.5s;
   }
   .navlinks li a:hover,
@@ -513,3 +513,6 @@ a:hover:before {
     margin-left: 305px;
   }
 }
+
+/* für später: kontakt-card
+dust storm: #E0D0C1 */
