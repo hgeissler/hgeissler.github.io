@@ -157,7 +157,7 @@ body {
 
 #mainName {
   font-family: 'Comfortaa';
-  font-size: 5rem;
+  font-size: 4.2rem;
   padding-bottom: 20px;
   text-transform: uppercase;
   color: #d0cde1;
@@ -175,7 +175,12 @@ body {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-#mainName img {
+#mainName p span {
+  color: #9e4770;
+  font-family: 'roboto condensed';
+}
+
+#main img {
   box-shadow: 3px 3px 5px#002533;
   border-radius: 50%;
   width: 100px;
@@ -184,8 +189,8 @@ body {
   cursor: pointer;
 }
 
-#mainName img:hover,
-#mainName img:focus {
+#main img:hover,
+#main img:focus {
   border-radius: 50%;
   box-shadow: 0 0 9px #00090d;
   opacity: 1;
@@ -200,7 +205,7 @@ body {
   top: 50vh;
   margin-top: -260px;
   margin-left: -260px;
-  background-color: #002c3e;
+  background-color: #002839;
   border-radius: 7px;
 }
 
@@ -255,7 +260,7 @@ body {
   /* font-family: 'Roboto Condensed'; */
   width: 90%;
   margin-bottom: 20px;
-  font-size: 30px;
+  font-size: 24px;
   letter-spacing: 2px;
   color: #f7f8f3;
   text-align: left;
@@ -482,6 +487,9 @@ a:hover:before {
   #main {
     margin-left: 100px;
   }
+  #main img {
+    margin-left: 200px;
+  }
 }
 
 @media (max-width: 1366px) {
@@ -495,9 +503,13 @@ a:hover:before {
   #mainName p {
     font-size: 3rem;
   }
+  .navlinks li a {
+    font-size: 1.1rem;
+  }
 }
 
-/* gradient für bg
-und für mobile
-font von nav größer
-footer anpassen & height 70 */
+@media (min-width: 1367px) {
+  #main img {
+    margin-left: 305px;
+  }
+}
