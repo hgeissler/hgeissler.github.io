@@ -517,7 +517,7 @@ a:hover:before {
   #wrapper {
     background-image: url('img/main_bg_1366.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     background-size: 100%;
   }
@@ -536,7 +536,7 @@ a:hover:before {
   #wrapper {
     background-image: url('img/main_bg_1920.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
   }
 }
@@ -550,8 +550,14 @@ a:hover:before {
   #ipadImg {
     background-image: url('img/main_ipad_pro.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
+  }
+}
+
+@media (min-heigt: 1025px) and (max-height: 1365px) {
+  #wrapper {
+    background-size: cover;
   }
 }
 
