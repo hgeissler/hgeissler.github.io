@@ -183,8 +183,8 @@ body {
 #main img {
   box-shadow: 3px 3px 5px#002533;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
   padding: 2px;
   cursor: pointer;
 }
@@ -487,9 +487,6 @@ a:hover:before {
   #main {
     margin-left: 100px;
   }
-  #main img {
-    margin-left: 200px;
-  }
 }
 
 @media (max-width: 1366px) {
@@ -509,9 +506,6 @@ a:hover:before {
 }
 
 @media (min-width: 1367px) {
-  #main img {
-    margin-left: 305px;
-  }
 }
 
 /* für später: kontakt-card
