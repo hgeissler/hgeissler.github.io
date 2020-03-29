@@ -507,17 +507,17 @@ a:hover:before {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1366px) {
   #main {
     margin-left: 100px;
   }
 }
 
-@media (max-width: 1366px) and (min-width: 1025px) {
+@media (max-width: 1919px) and (min-width: 1366px) {
   #wrapper {
     background-image: url('img/main_bg_1366.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     background-size: 100%;
   }
@@ -532,16 +532,16 @@ a:hover:before {
   }
 }
 
-@media (min-width: 1367px) {
+@media (min-width: 1920px) {
   #wrapper {
     background-image: url('img/main_bg_1920.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1365px) {
   .toggleIpadImg {
     display: block;
     width: 100%;
@@ -557,3 +557,4 @@ a:hover:before {
 
 /* für später: kontakt-card
 dust storm: #E0D0C1 */
+/* shadow um wrapper herum */
