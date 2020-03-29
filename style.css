@@ -118,7 +118,6 @@ body {
   flex-flow: row;
   justify-content: center;
   align-items: center;
-  height: 70px;
 }
 
 .navlinks li {
@@ -132,7 +131,6 @@ body {
   padding: 0.5em 0.7em;
   margin: 1em;
   display: block;
-  font-size: 1.4em;
   border-radius: 8px;
   border-top-right-radius: 2px;
   letter-spacing: 2px;
@@ -340,6 +338,7 @@ a:hover:before {
   #main {
     align-items: center;
     margin: 0 auto;
+    padding-top: 50px;
     justify-content: space-between;
   }
 
@@ -348,11 +347,13 @@ a:hover:before {
     text-align: center;
     margin-left: 18px;
     margin-right: 18px;
+    font-size: 3.4rem;
   }
   #description {
     text-align: center;
     margin-left: 18px;
     margin-right: 18px;
+    font-size: 20px;
   }
   #smallMe {
     margin: 20px;
@@ -376,7 +377,7 @@ a:hover:before {
     margin: 0 auto;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   #description,
   #mainName p {
     text-align: center;
@@ -493,7 +494,7 @@ a:hover:before {
   }
 }
 
-@media (min-width: 601px) {
+@media (min-width: 701px) {
   #headerMenu {
     align-items: flex-start;
     z-index: 9;
@@ -504,6 +505,12 @@ a:hover:before {
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.25);
     width: 100%;
     background-color: #002c3e;
+  }
+  .navlinks {
+    height: 70px;
+  }
+  .navlinks li a {
+    font-size: 1.4rem;
   }
 }
 
@@ -541,21 +548,19 @@ a:hover:before {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1365px) {
-  .toggleIpadImg {
-    height: 580px;
-  }
+@media (min-width: 769px) and (max-width: 1024px) {
   #ipadImg {
+    background-size: contain;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1365px) {
+  #ipadImg {
+    height: 580px;
     background-image: url('img/main_ipad_pro.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-  }
-}
-
-@media (min-heigt: 1025px) and (max-height: 1365px) {
-  #wrapper {
-    background-size: cover;
   }
 }
 
