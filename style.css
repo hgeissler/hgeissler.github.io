@@ -360,7 +360,7 @@ a:hover:before {
 
   .toggleIpadImg {
     display: block;
-    width: 100%;
+    width: 100vw;
     height: 433px;
   }
 
@@ -543,8 +543,6 @@ a:hover:before {
 
 @media (min-width: 769px) and (max-width: 1365px) {
   .toggleIpadImg {
-    display: block;
-    width: 100%;
     height: 580px;
   }
   #ipadImg {
