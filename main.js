@@ -1,36 +1,35 @@
-var smallMe = document.getElementById('smallMe');
-var hiddenContainer = document.getElementById('hiddenContainer');
+var smallMe = document.getElementById('smallMe')
+var hiddenContainer = document.getElementById('hiddenContainer')
 
 smallMe.onclick = function() {
-  hiddenContainer.style.display = "block";
+  hiddenContainer.style.display = 'block'
 }
 
-var spanClose = document.getElementById("close");
+var spanClose = document.getElementById('close')
 spanClose.onclick = function() {
-  hiddenContainer.style.display = "none";
+  hiddenContainer.style.display = 'none'
 }
 
-var footerText = document.getElementById('footerText');
-var footerButton = document.querySelector('#footerButton');
+var footerText = document.getElementById('footerText')
+var footerButton = document.querySelector('#footerButton')
 footerButton.onmouseover = function() {
-  footerText.style.fontSize = "1em";
+  footerText.style.fontSize = '1.2rem'
 }
 footerButton.onmouseout = function() {
-  footerText.style.fontSize = "0.9em";
+  footerText.style.fontSize = '1.1rem'
 }
 
-window.onload = function(){
-  document.onclick = function(e){
-    if(e.target.id !== 'smallMe') {
-        hiddenContainer.style.display = 'none';
+window.onload = function() {
+  document.onclick = function(e) {
+    if (e.target.id !== 'smallMe') {
+      hiddenContainer.style.display = 'none'
     }
-  };
-};
+  }
+}
 
 function toggleLinks() {
-  let navlinks = document.querySelector('.navlinks');
-  navlinks.classList.toggle('navlinksToggleShow');
+  let navlinks = document.querySelector('.navlinks')
+  navlinks.classList.toggle('navlinksToggleShow')
 }
 
-document.querySelector('#burgerMenu')
-  .addEventListener('click', toggleLinks);
+document.querySelector('#burgerMenu').addEventListener('click', toggleLinks)
