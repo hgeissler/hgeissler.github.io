@@ -174,7 +174,7 @@ body {
   font-family: 'roboto condensed';
 }
 
-#main img {
+#smallMe {
   box-shadow: 3px 3px 5px#002533;
   border-radius: 50%;
   width: 140px;
@@ -320,18 +320,23 @@ a:hover:before {
   display: none;
 }
 
-.toggleIpadImg {
+.ipad-img-box {
+  display: none;
+}
+.ipad-pro-img-box {
   display: none;
 }
 
-#ipadImg {
-  background-image: url('img/main_ipad.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-
 @media (max-width: 1365px) {
+  .ipad-pro-img-box {
+    display: block;
+    min-height: 580px;
+  }
+  .ipad-img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+  }
   #wrapper {
     background: none;
   }
@@ -357,12 +362,6 @@ a:hover:before {
   }
   #smallMe {
     margin: 20px;
-  }
-
-  .toggleIpadImg {
-    display: block;
-    width: 100vw;
-    height: 433px;
   }
 
   #footerButton:after {
@@ -561,6 +560,16 @@ a:hover:before {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+  }
+}
+
+@media (max-width: 768px) {
+  .ipad-img-box {
+    display: block;
+    min-height: 433px;
+  }
+  .ipad-pro-img-box {
+    display: none;
   }
 }
 
