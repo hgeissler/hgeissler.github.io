@@ -467,6 +467,7 @@ a:hover:before {
     top: 100%;
     left: 0px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+    padding-bottom: 13px;
   }
 
   #mainName {
