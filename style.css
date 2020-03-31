@@ -405,7 +405,7 @@ a:hover:before {
     top: 0;
     background-color: #002839;
     z-index: 1;
-    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
     height: 56px;
   }
 
@@ -466,7 +466,7 @@ a:hover:before {
     width: 100%;
     top: 100%;
     left: 0px;
-    box-shadow: 0 0.25rem 0.75rem -0.3rem rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
   }
 
   #mainName {
@@ -573,5 +573,3 @@ a:hover:before {
 dust storm: #E0D0C1  
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 */
-
-/* BACKGROUND IMG ANPASSEN; navlinks 50px; footer ? */
