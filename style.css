@@ -415,13 +415,12 @@ a:hover:before {
 
   .navlinks li {
     align-self: flex-end;
+    margin: 3px;
   }
 
   .navlinks li a {
     color: #9e4770;
-    margin: 0.5em;
-    margin-right: 1em;
-    margin-left: 1em;
+    margin: 0.5em 1em;
     border-radius: 2px;
     width: 120px;
     height: 35px;
@@ -467,7 +466,7 @@ a:hover:before {
     top: 100%;
     left: 0px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
-    padding-bottom: 13px;
+    padding-bottom: 8px;
   }
 
   #mainName {
