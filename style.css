@@ -158,7 +158,6 @@ body {
 
 #mainName {
   font-family: 'Comfortaa';
-  font-size: 3.2rem;
   padding-bottom: 20px;
   text-transform: uppercase;
   color: #d0cde1;
@@ -170,13 +169,14 @@ body {
   flex-wrap: wrap;
 }
 
-#mainName p {
+#mainName h1 {
+  font-size: 3.2rem;
   margin: 0;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15rem;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-#mainName p span {
+#mainName h1 span {
   color: #9e4770;
   font-family: 'roboto condensed';
 }
@@ -258,13 +258,16 @@ body {
 }
 
 #description {
-  /* font-family: 'Roboto Condensed'; */
   width: 90%;
   margin-bottom: 20px;
-  font-size: 18px;
   letter-spacing: 2px;
   color: #f7f8f3;
   text-align: left;
+  font-size: 18px;
+}
+
+#description p {
+  margin: 0 0 8px;
 }
 
 #smallMe {
@@ -360,12 +363,17 @@ a:hover:before {
     text-align: center;
     margin-left: 18px;
     margin-right: 18px;
+  }
+
+  #mainName h1 {
     font-size: 3rem;
   }
+
   #description {
     text-align: center;
     margin-left: 18px;
     margin-right: 18px;
+    font-size: 16px;
   }
   #smallMe {
     margin: 20px;
@@ -379,13 +387,13 @@ a:hover:before {
     margin: 0;
   }
   #description,
-  #mainName p {
+  #mainName h1 {
     margin: 0 auto;
   }
 }
 @media (max-width: 767px) {
   #description,
-  #mainName p {
+  #mainName h1 {
     text-align: center;
   }
   #selectedNav {
@@ -467,13 +475,6 @@ a:hover:before {
     padding-bottom: 8px;
   }
 
-  #mainName p {
-    font-size: 2.7em;
-  }
-  #description {
-    font-size: 1em;
-  }
-
   .modal {
     left: calc(50vw - 145px);
     top: calc(50vh - 145px);
@@ -511,9 +512,6 @@ a:hover:before {
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.25);
     height: 64px;
   }
-  .navlinks li a {
-    font-size: 1.1rem;
-  }
   #main {
     min-height: calc(100vh - 128px);
   }
@@ -532,14 +530,11 @@ a:hover:before {
     background-position: center center;
     background-size: 100% 100%;
   }
-  #description {
-    font-size: 1rem;
-  }
-  #mainName p {
+  #mainName h1 {
     font-size: 3rem;
   }
-  .navlinks li a {
-    font-size: 1rem;
+  #description {
+    font-size: 16px;
   }
 }
 
@@ -563,12 +558,18 @@ a:hover:before {
   }
 }
 
-@media (min-width: 1930px) {
-  #mainName p {
-    font-size: 3.4rem;
+@media (min-width: 2500px) {
+  #main {
+    padding-left: 200px;
+  }
+}
+@media (min-width: 4000px) {
+  #main {
+    padding-left: 0;
+    align-items: center;
   }
   #description {
-    font-size: 20px;
+    text-align: center;
   }
 }
 
