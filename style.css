@@ -406,7 +406,6 @@ a:hover:before {
     background-color: #002839;
     z-index: 1;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
-    height: 56px;
   }
 
   .navlinks {
@@ -491,10 +490,6 @@ a:hover:before {
   #close {
     top: 5px;
     right: 20px;
-  }
-
-  #footer {
-    height: 56px;
   }
 
   #footerButton:after {
