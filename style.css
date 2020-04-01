@@ -74,9 +74,9 @@ body {
   flex-flow: column;
   justify-content: center;
   align-items: start;
-  margin: 0 auto 100px;
+  margin: 0 auto 60px;
   /* box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.25); */
-  box-shadow: 0px 40px 25px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 30px 20px 5px rgba(0, 0, 0, 0.1);
 }
 #footer {
   display: flex;
@@ -353,7 +353,6 @@ a:hover:before {
   }
   #main {
     align-items: center;
-    margin: 0 auto 100px;
     padding-top: 50px;
     justify-content: space-between;
   }
@@ -573,7 +572,56 @@ a:hover:before {
   }
 }
 
+.section-img-box {
+  display: flex;
+  max-height: 318px;
+  margin: 0 auto 30px;
+}
+
+.section-img {
+  height: 33px;
+  margin: 0 auto;
+}
+
+#aboutme {
+  font-family: 'roboto';
+  padding: 16px 0;
+  margin: 0;
+  padding-left: 16px;
+  color: #f7f8f3;
+  font-weight: normal;
+  letter-spacing: 0.15rem;
+  /* border-bottom: 1px solid #000; */
+  background-color: #002839;
+}
+
+.aboutme-card {
+  font-family: 'roboto condensed';
+  background-color: #f7f8f3;
+  color: #002839;
+  max-width: 600px;
+  margin: 0 auto 100px;
+  border-radius: 5px;
+  border: 2px solid #9e4770;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.aboutme-card > * {
+  margin-left: 16px;
+}
+
+.aboutme-card > ul > li {
+  list-style: none;
+  margin-bottom: 8px;
+  /* list-style: url(img/list-img.png); */
+  background: url(img/list-img.png) left center no-repeat;
+  padding-left: 24px;
+}
+.help-ger {
+  font-size: 0.9rem;
+}
+
 /* für später: kontakt-card
-dust storm: #E0D0C1  
+dust storm: #e0d0c1  
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 */
