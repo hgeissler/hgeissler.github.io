@@ -158,7 +158,7 @@ body {
 
 #mainName {
   font-family: 'Comfortaa';
-  font-size: 4.2rem;
+  font-size: 3.4rem;
   padding-bottom: 20px;
   text-transform: uppercase;
   color: #d0cde1;
@@ -261,7 +261,7 @@ body {
   /* font-family: 'Roboto Condensed'; */
   width: 90%;
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: 2px;
   color: #f7f8f3;
   text-align: left;
@@ -360,7 +360,7 @@ a:hover:before {
     text-align: center;
     margin-left: 18px;
     margin-right: 18px;
-    font-size: 3.4rem;
+    font-size: 3rem;
   }
   #description {
     text-align: center;
@@ -518,7 +518,7 @@ a:hover:before {
     height: 64px;
   }
   .navlinks li a {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   #main {
     min-height: calc(100vh - 128px);
@@ -545,7 +545,7 @@ a:hover:before {
     font-size: 3rem;
   }
   .navlinks li a {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 
@@ -566,6 +566,15 @@ a:hover:before {
   }
   .ipad-pro-img-box {
     display: none;
+  }
+}
+
+@media (min-width: 1921px) {
+  #mainName p {
+    font-size: 3.6rem;
+  }
+  #description {
+    font-size: 24px;
   }
 }
 
