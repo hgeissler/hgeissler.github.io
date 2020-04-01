@@ -339,8 +339,9 @@ a:hover:before {
 
 @media (max-width: 1365px) {
   .ipad-pro-img-box {
-    display: block;
+    display: flex;
     width: 100vw;
+    align-items: flex-end;
   }
   .ipad-img {
     max-height: 580px;
@@ -548,9 +549,13 @@ a:hover:before {
 
 @media (max-width: 768px) {
   .ipad-img-box {
-    display: block;
-    max-height: 433px;
+    display: flex;
     width: 100vw;
+    align-items: flex-end;
+    max-height: 433px;
+  }
+  .ipad-img {
+    max-height: 433px;
   }
   .ipad-pro-img-box {
     display: none;
