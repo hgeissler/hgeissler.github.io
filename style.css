@@ -443,7 +443,7 @@ a:hover:before {
 
   #burgerMenu img {
     height: 40px;
-    margin: 0em 1em;
+    margin: 12px 1rem;
   }
 
   #headerMenu nav {
