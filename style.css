@@ -75,8 +75,8 @@ body {
   justify-content: center;
   align-items: start;
   margin: 0 auto 100px;
-  /* box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.25); */
-  box-shadow: 0px 30px 20px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.25);
+  /* box-shadow: 0px 20px 30px 5px rgba(0, 0, 0, 0.1); */
 }
 #footer {
   display: flex;
@@ -592,27 +592,29 @@ a:hover:before {
   font-family: 'roboto';
   padding: 16px 0;
   margin: 0;
+  margin-bottom: 32px;
   padding-left: 16px;
-  color: #002839;
+  color: #001620;
   font-weight: normal;
   letter-spacing: 0.15rem;
   /* border-bottom: 1px solid #000; */
-  background-color: #34d1bf;
+  background-color: #d0cde1;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
 }
 
 .aboutme-card {
-  /* font-family: 'roboto condensed'; */
+  font-family: 'roboto condensed';
   background-color: #fff;
-  color: #002839;
+  color: #001620;
   max-width: 600px;
   margin: 0 auto 100px;
   border-radius: 5px;
-  border: 2px solid #34d1bf;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  border: 2px solid #d0cde1;
+  box-shadow: 0 10px 17px 0 rgba(0, 0, 0, 0.5);
 }
 
 .aboutme-card h3 {
-  letter-spacing: 1px;
+  letter-spacing: 3px;
 }
 
 .aboutme-card > * {
@@ -621,14 +623,16 @@ a:hover:before {
 
 .aboutme-card ul {
   padding-left: 16px;
+  margin-bottom: 32px;
 }
 
 .aboutme-card > ul > li {
   list-style: none;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   /* list-style: url(img/list-img.png); */
   background: url(img/list-img.png) left center no-repeat;
   padding-left: 24px;
+  letter-spacing: 1px;
 }
 .help-ger {
   font-size: 0.9rem;
