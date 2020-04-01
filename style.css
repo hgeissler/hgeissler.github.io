@@ -158,7 +158,7 @@ body {
 
 #mainName {
   font-family: 'Comfortaa';
-  font-size: 3.4rem;
+  font-size: 3.2rem;
   padding-bottom: 20px;
   text-transform: uppercase;
   color: #d0cde1;
@@ -261,7 +261,7 @@ body {
   /* font-family: 'Roboto Condensed'; */
   width: 90%;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 2px;
   color: #f7f8f3;
   text-align: left;
@@ -366,7 +366,6 @@ a:hover:before {
     text-align: center;
     margin-left: 18px;
     margin-right: 18px;
-    font-size: 20px;
   }
   #smallMe {
     margin: 20px;
@@ -468,11 +467,11 @@ a:hover:before {
     padding-bottom: 8px;
   }
 
-  #mainName {
+  #mainName p {
     font-size: 2.7em;
   }
   #description {
-    font-size: 0.9em;
+    font-size: 1em;
   }
 
   .modal {
@@ -564,12 +563,12 @@ a:hover:before {
   }
 }
 
-@media (min-width: 1921px) {
+@media (min-width: 1930px) {
   #mainName p {
-    font-size: 3.6rem;
+    font-size: 3.4rem;
   }
   #description {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
