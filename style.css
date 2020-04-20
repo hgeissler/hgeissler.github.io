@@ -613,7 +613,7 @@ body:last-of-type {
     background-image: url('img/main_bg_1920.png');
     background-repeat: no-repeat;
     background-position: right bottom;
-    background-size: auto;
+    background-size: contain;
   }
 }
 
