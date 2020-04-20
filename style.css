@@ -593,18 +593,27 @@ body:last-of-type {
   }
 }
 
-@media (max-width: 1919px) and (min-width: 1366px) {
+@media (min-width: 1366px) {
   #main {
     background-image: url('img/main_bg_1366.png');
     background-repeat: no-repeat;
     background-position: right bottom;
-    background-size: auto;
+    background-size: contain;
   }
   #mainName h1 {
     font-size: 3rem;
   }
   #description {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 1919px) and (min-width: 1500px) {
+  #main {
+    background-image: url('img/main_bg_1366.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: auto;
   }
 }
 
