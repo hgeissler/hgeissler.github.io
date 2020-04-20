@@ -598,7 +598,7 @@ body:last-of-type {
     background-image: url('img/main_bg_1366.png');
     background-repeat: no-repeat;
     background-position: right bottom;
-    background-size: contain;
+    background-size: auto;
   }
   #mainName h1 {
     font-size: 3rem;
@@ -609,6 +609,15 @@ body:last-of-type {
 }
 
 @media (min-width: 1920px) {
+  #main {
+    background-image: url('img/main_bg_1920.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: auto;
+  }
+}
+
+@media (min-width: 2400px) {
   #main {
     background-image: url('img/main_bg_1920.png');
     background-repeat: no-repeat;
