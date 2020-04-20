@@ -158,7 +158,7 @@ body {
 
 #mainName {
   font-family: 'Comfortaa';
-  padding-bottom: 20px;
+  /* padding-bottom: 10px; */
   text-transform: uppercase;
   color: #d0cde1;
   margin-top: 20px;
@@ -179,6 +179,14 @@ body {
 #mainName h1 span {
   color: #b55a84;
   font-family: 'roboto condensed';
+}
+
+.degree {
+  margin: 0;
+  font-family: 'roboto condensed';
+  padding-bottom: 50px;
+  color: #b55a84;
+  font-size: 20px;
 }
 
 #smallMe {
@@ -336,6 +344,62 @@ a:hover:before {
   display: none;
 }
 
+.section-img-box {
+  display: flex;
+  max-height: 318px;
+  margin: 0 auto 80px;
+}
+
+.section-img {
+  height: 33px;
+  margin: 0 auto;
+}
+
+.section-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.container-header {
+  font-family: 'roboto';
+  color: #b55a84;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.card-header {
+  font-family: 'roboto';
+  padding: 16px 0;
+  margin: 0;
+  margin-bottom: 32px;
+  padding-left: 16px;
+  color: #001620;
+  font-weight: normal;
+  letter-spacing: 0.15rem;
+  background-color: #d0cde1;
+  box-shadow: 0 0.15rem 0.35rem rgba(0, 0, 0, 0.15);
+}
+
+.section-card {
+  background-color: #fff;
+  color: #001620;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  border-radius: 3px;
+  border: 2px solid #d0cde1;
+  box-shadow: 0 10px 17px 0 rgba(0, 0, 0, 0.5);
+}
+
+body:last-of-type {
+  margin-bottom: 100px;
+}
+
+.small-description {
+  display: none;
+}
+
 @media (max-width: 1365px) {
   .ipad-pro-img-box {
     display: flex;
@@ -370,10 +434,17 @@ a:hover:before {
 
   #description {
     text-align: center;
-    margin-left: 18px;
-    margin-right: 18px;
+    margin-left: 38px;
+    margin-right: 38px;
     font-size: 16px;
   }
+
+  .degree {
+    text-align: center;
+    margin-left: 38px;
+    margin-right: 38px;
+  }
+
   #smallMe {
     margin: 20px;
   }
@@ -385,16 +456,16 @@ a:hover:before {
   #footerText {
     margin: 0;
   }
-  #description,
-  #mainName h1 {
-    margin: 0 auto;
-  }
 }
+
 @media (max-width: 767px) {
-  #description,
-  #mainName h1 {
-    text-align: center;
+  .small-description {
+    display: block;
   }
+  .big-description {
+    display: none;
+  }
+
   #selectedNav {
     display: none;
   }
@@ -576,81 +647,12 @@ a:hover:before {
   }
 }
 
-.section-img-box {
-  display: flex;
-  max-height: 318px;
-  margin: 0 auto 80px;
-}
-
-.section-img {
-  height: 33px;
-  margin: 0 auto;
-}
-
-.section-container {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.container-header {
-  font-family: 'roboto';
-  color: #b55a84;
-  margin-bottom: 30px;
-  letter-spacing: 2px;
-  font-weight: normal;
-  text-transform: uppercase;
-}
-
-.aboutme {
-  font-family: 'roboto';
-  padding: 16px 0;
-  margin: 0;
-  margin-bottom: 32px;
-  padding-left: 16px;
-  color: #001620;
-  font-weight: normal;
-  letter-spacing: 0.15rem;
-  background-color: #d0cde1;
-  box-shadow: 0 0.15rem 0.35rem rgba(0, 0, 0, 0.15);
-}
-
-.aboutme-card {
-  background-color: #fff;
-  color: #001620;
-  max-width: 600px;
-  margin: 0 auto 30px;
-  border-radius: 3px;
-  border: 2px solid #d0cde1;
-  box-shadow: 0 10px 17px 0 rgba(0, 0, 0, 0.5);
-}
-
-.aboutme-card ul {
-  padding-left: 16px;
-  margin-bottom: 32px;
-}
-
-.aboutme-card > ul > li {
-  list-style: none;
-  margin-bottom: 16px;
-  /* list-style: url(img/list-img.png); */
-  background: url(img/list-img.png) left center no-repeat;
-  padding-left: 32px;
-  letter-spacing: 1px;
-}
-.help-ger {
-  font-size: 0.9rem;
-}
-
 @media (max-width: 632px) {
-  .aboutme-card,
+  .section-card,
   .container-header {
     margin-left: 15px;
     margin-right: 15px;
   }
-}
-
-body:last-of-type {
-  margin-bottom: 100px;
 }
 
 /* für später: kontakt-card
