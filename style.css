@@ -378,15 +378,17 @@ a:hover:before {
   color: #f7f8f3;
   font-weight: normal;
   letter-spacing: 0.15rem;
-  box-shadow: 0 0.15rem 0.35rem rgba(0, 0, 0, 0.15);
   background-color: #002839;
   cursor: pointer;
   position: relative;
-  height: 50px;
-  line-height: 50px;
-  background-image: url(/img/link.png);
+  height: 40px;
+  line-height: 40px;
+  background-image: url(/img/link-24px.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left center;
+  padding-left: 32px;
+  margin-left: 10px;
+  font-size: 22px;
 }
 
 .section-card {
@@ -395,9 +397,6 @@ a:hover:before {
   border: 1px solid #002839;
   border-radius: 4px;
   box-shadow: 0 10px 17px 0 rgba(0, 0, 0, 0.5);
-}
-
-.section-card {
   display: flex;
   max-width: 640px;
   height: 940px;
@@ -405,11 +404,18 @@ a:hover:before {
   overflow: hidden;
 }
 
+.card-header a {
+  text-decoration: none;
+  color: #f7f8f3;
+}
+
 iframe {
   flex-grow: 1;
-  border: none;
-  margin: 3px;
+  border-radius: 2px;
+  border: 1px solid #002839;
+  margin: 0 10px 10px;
   padding: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 iframe::-webkit-scrollbar {
