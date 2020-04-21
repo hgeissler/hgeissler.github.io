@@ -356,7 +356,7 @@ a:hover:before {
 }
 
 .section-container {
-  max-width: 600px;
+  /* max-width: 600px; */
   margin: 0 auto;
 }
 
@@ -367,29 +367,53 @@ a:hover:before {
   letter-spacing: 2px;
   font-weight: normal;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .card-header {
   font-family: 'roboto';
   padding: 16px 0;
   margin: 0;
-  margin-bottom: 32px;
   padding-left: 16px;
-  color: #001620;
+  color: #f7f8f3;
   font-weight: normal;
   letter-spacing: 0.15rem;
-  background-color: #d0cde1;
   box-shadow: 0 0.15rem 0.35rem rgba(0, 0, 0, 0.15);
+  background-color: #002839;
+  cursor: pointer;
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  background-image: url(/img/link.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .section-card {
-  background-color: #fff;
-  color: #001620;
-  max-width: 600px;
-  margin: 0 auto 30px;
-  border-radius: 3px;
-  border: 2px solid #d0cde1;
+  background-color: #002839;
+  margin: 0 auto 300px;
+  border: 1px solid #002839;
+  border-radius: 4px;
   box-shadow: 0 10px 17px 0 rgba(0, 0, 0, 0.5);
+}
+
+.section-card {
+  display: flex;
+  max-width: 640px;
+  height: 940px;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+iframe {
+  flex-grow: 1;
+  border: none;
+  margin: 3px;
+  padding: 0;
+}
+
+iframe::-webkit-scrollbar {
+  display: none;
 }
 
 body:last-of-type {
