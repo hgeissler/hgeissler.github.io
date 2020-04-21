@@ -358,12 +358,14 @@ a:hover:before {
 .section-container {
   /* max-width: 600px; */
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .container-header {
   font-family: 'roboto';
   color: #b55a84;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   letter-spacing: 2px;
   font-weight: normal;
   text-transform: uppercase;
@@ -393,16 +395,32 @@ a:hover:before {
 
 .section-card {
   background-color: #002839;
-  margin: 0 auto 300px;
+  margin: 0 auto 30px;
   border: 1px solid #002839;
   border-radius: 4px;
   box-shadow: 0 10px 17px 0 rgba(0, 0, 0, 0.5);
   display: flex;
-  max-width: 640px;
-  height: 940px;
+
   flex-direction: column;
   overflow: hidden;
 }
+
+#first-card {
+  width: 640px;
+  height: 960px;
+}
+#second-card {
+  width: 640px;
+  height: 960px;
+}
+
+/* @media (max-width: 650px) {
+  #first-card {
+    max-width: 640px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+} */
 
 .card-header a {
   text-decoration: none;
