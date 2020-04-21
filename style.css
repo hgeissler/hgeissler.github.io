@@ -500,6 +500,10 @@ body:last-of-type {
     display: none;
   }
 
+  .card-header {
+    font-size: 18px;
+  }
+
   #main {
     display: flex;
     flex-direction: column;
