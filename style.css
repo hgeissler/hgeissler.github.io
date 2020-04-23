@@ -357,19 +357,23 @@ a:hover:before {
 
 .section-container {
   /* max-width: 600px; */
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .container-header {
   font-family: 'roboto';
   color: #b55a84;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   letter-spacing: 2px;
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
+  font-size: 28px;
 }
 
 .card-header {
@@ -395,23 +399,27 @@ a:hover:before {
 
 .section-card {
   background-color: #002839;
-  margin: 0 auto 30px;
+  margin: 30px;
   border: 1px solid #002839;
   border-radius: 4px;
   box-shadow: 0 10px 17px 0 rgba(0, 0, 0, 0.5);
   display: flex;
-
   flex-direction: column;
   overflow: hidden;
+  justify-content: space-around;
 }
 
 #first-card {
-  width: 640px;
-  height: 960px;
+  width: 360px;
+  height: 800px;
 }
 #second-card {
+  width: 360px;
+  height: 800px;
+}
+#third-card {
   width: 640px;
-  height: 960px;
+  height: 210px;
 }
 
 /* @media (max-width: 650px) {
@@ -425,6 +433,7 @@ a:hover:before {
 .card-header a {
   text-decoration: none;
   color: #f7f8f3;
+  border-bottom: 1px solid #f7f8f3;
 }
 
 iframe {
