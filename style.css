@@ -96,14 +96,15 @@ body {
   background-color: #002839;
 }
 
-#selectedNav {
-  pointer-events: none;
+.selectedNav {
   border-radius: 0px;
 }
-#selectedNavText {
-  padding: 3px;
-  border-bottom: 2px solid #b55a84;
-  text-transform: uppercase;
+@media (min-width: 768px) {
+  .selectedNavText {
+    padding: 3px;
+    border-bottom: 2px solid #b55a84;
+    text-transform: uppercase;
+  }
 }
 
 /* #pic {
@@ -569,10 +570,6 @@ body:last-of-type {
     display: none;
   }
 
-  #selectedNav {
-    display: none;
-  }
-
   .card-header {
     font-size: 18px;
   }
@@ -604,7 +601,7 @@ body:last-of-type {
   .navlinks li a {
     color: #b55a84;
     margin: 0.5em 1em;
-    border-radius: 2px;
+    border-radius: 4px;
     width: 120px;
     height: 35px;
     line-height: 35px;
@@ -674,7 +671,7 @@ body:last-of-type {
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   #headerMenu {
     align-items: flex-start;
     z-index: 9;
