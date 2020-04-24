@@ -373,7 +373,7 @@ a:hover:before {
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
-  font-size: 28px;
+  font-size: 32px;
 }
 
 .card-header {
@@ -564,6 +564,7 @@ body:last-of-type {
 @media (max-width: 767px) {
   .contact {
     flex-direction: column;
+    align-items: center;
   }
 
   .small-description {
