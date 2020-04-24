@@ -467,7 +467,7 @@ body:last-of-type {
 
 .contact {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
@@ -481,7 +481,6 @@ body:last-of-type {
 
 .contact p {
   margin-bottom: 30px;
-  margin-right: 50px;
 }
 
 #github {
