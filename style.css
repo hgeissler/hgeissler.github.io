@@ -562,10 +562,10 @@ body:last-of-type {
 }
 
 @media (max-width: 767px) {
-  .contact {
+  /* .contact {
     flex-direction: column;
     align-items: center;
-  }
+  } */
 
   .small-description {
     display: block;
