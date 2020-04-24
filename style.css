@@ -417,14 +417,14 @@ a:hover:before {
   width: 390px;
   height: 800px;
 }
-#third-card {
-  width: 640px;
+#third-card figure {
+  max-width: 570px;
 }
 
 #third-card img {
-  height: 313px;
-  width: 538px;
-  margin: 16px auto;
+  max-height: 313px;
+  max-width: 100%;
+  margin: 0 auto 16px;
   border: 1px solid #173e4d;
 }
 
