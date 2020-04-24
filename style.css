@@ -147,8 +147,7 @@ body {
   width: 127px;
 }
 
-.navlinks li a:hover,
-.navlinks li a:focus {
+.navlinks li a:hover {
   background: #b55a84;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.6s ease-out;
@@ -501,7 +500,7 @@ body:last-of-type {
 #mail {
   text-align: center;
   color: #b55a84;
-  padding-bottom: 150px;
+  padding-bottom: 500px;
 }
 
 @media (max-width: 1365px) {
@@ -608,11 +607,8 @@ body:last-of-type {
     border: 1px solid #b55a84;
     transition: all 0.5s;
   }
-  .navlinks li a:hover,
-  .navlinks li a:focus {
+  .navlinks li a:hover {
     color: #002839;
-  }
-  .navlinks li a:active {
     background: #b55a84;
   }
 
