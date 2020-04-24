@@ -607,7 +607,7 @@ body:last-of-type {
     border: 1px solid #b55a84;
     transition: all 0.5s;
   }
-  .navlinks li a:hover {
+  .navlinks li a:hover, .navlinks li a:active {
     color: #002839;
     background: #b55a84;
   }
