@@ -435,7 +435,7 @@ a:hover:before {
   border-bottom-width: 40px;
   /* flex-grow: 1; */
   max-width: 380px;
-  height: 600px;
+  height: 540px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -565,7 +565,7 @@ iframe {
 
 @media (max-width: 767px) {
   .iframe-border {
-    height: 420px;
+    height: 410px;
   }
 
   .small-description {
