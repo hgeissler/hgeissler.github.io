@@ -101,10 +101,15 @@
       <div class="section-card" id="first-card">
         <h3 class="card-header">
           <a href="project-pages/dist/index.html" target="_blank"
-            >Photographer Webdesign</a
+            >Vue Webpage</a
           >
         </h3>
-        <iframe src="./project-pages/dist/index.html" frameborder="0"></iframe>
+        <div class="iframe-border">
+          <iframe
+            src="./project-pages/dist/index.html"
+            frameborder="0"
+          ></iframe>
+        </div>
       </div>
 
       <div class="section-card" id="second-card">
@@ -113,27 +118,31 @@
             >Bootstrap Webdesign</a
           >
         </h3>
-        <iframe
-          src="./project-pages/the_net_ninja_dojo/index.html"
-          frameborder="0"
-        ></iframe>
+        <div class="iframe-border">
+          <iframe
+            src="./project-pages/the_net_ninja_dojo/index.html"
+            frameborder="0"
+          ></iframe>
+        </div>
       </div>
 
       <!-- RESTAURANT WEBSITE -->
     </div>
 
-    <div class="section-card" id="third-card">
-      <h3 class="card-header">
-        <a
-          href="https://marketplace.visualstudio.com/items?itemName=geisslerh.ayu-mirage-bold-italic"
-          target="_blank"
-          >Ayu Mirage PowerUp</a
-        >
-      </h3>
-      <figure>
-        <img src="img/vs_theme.png" alt="" srcset="" />
-        <figcaption>Visual Studio Code Theme</figcaption>
-      </figure>
+    <div class="theme-container">
+      <div class="section-card" id="theme-card">
+        <h3 class="card-header">
+          <a
+            href="https://marketplace.visualstudio.com/items?itemName=geisslerh.ayu-mirage-bold-italic"
+            target="_blank"
+            >Ayu Mirage PowerUp</a
+          >
+        </h3>
+        <figure>
+          <img src="img/vs_theme.png" alt="" srcset="" />
+          <figcaption>Visual Studio Code Theme</figcaption>
+        </figure>
+      </div>
     </div>
 
     <div class="section-img-box" id="contact">
@@ -142,30 +151,31 @@
 
     <h2 class="container-header">Contact</h2>
 
-    <div class="contact">
-      <address>
+    <div class="contact-container">
+      <div class="contact">
         <p>
-          <a href="https://github.com/hgeissler" target="_blank" id="github"
-            >GitHub</a
-          >
+          <a
+            href="https://github.com/hgeissler"
+            target="_blank"
+            id="github"
+          ></a>
         </p>
         <p>
           <a
             href="https://www.xing.com/profile/Hannes_Geissler9"
             target="_blank"
             id="xing"
-            >Xing</a
-          >
+          ></a>
         </p>
         <p>
           <a
             href="https://www.instagram.com/hannes_ge_/"
             target="_blank"
             id="insta"
-            >Instagram</a
           >
+          </a>
         </p>
-      </address>
+      </div>
     </div>
 
     <address>
@@ -176,8 +186,6 @@
         </em>
       </p>
     </address>
-
-    <div id="filler"></div>
 
     <div id="footer">
       <div
