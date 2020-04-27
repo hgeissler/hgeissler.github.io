@@ -265,7 +265,7 @@ body {
   cursor: pointer;
 }
 
-#description {
+.description {
   width: 90%;
   margin-bottom: 20px;
   letter-spacing: 2px;
@@ -274,7 +274,7 @@ body {
   font-size: 18px;
 }
 
-#description p {
+.description p {
   margin: 0 0 8px;
 }
 
@@ -415,7 +415,7 @@ a:hover:before {
 }
 
 #theme-card img {
-  max-height: 313px;
+  max-height: 312px;
   max-width: 100%;
   margin: 0 auto 16px;
   border: 1px solid #173e4d;
@@ -537,7 +537,7 @@ iframe {
     font-size: 3rem;
   }
 
-  #description {
+  .description {
     text-align: center;
     margin-left: 38px;
     margin-right: 38px;
@@ -564,6 +564,19 @@ iframe {
 }
 
 @media (max-width: 767px) {
+  .ipad-img-box {
+    display: flex;
+    width: 100vw;
+    align-items: flex-end;
+    max-height: 433px;
+  }
+  .ipad-img {
+    max-height: 433px;
+  }
+  .ipad-pro-img-box {
+    display: none;
+  }
+
   .iframe-border {
     height: 410px;
   }
@@ -710,7 +723,7 @@ iframe {
   #mainName h1 {
     font-size: 3rem;
   }
-  #description {
+  .description {
     font-size: 16px;
   }
 }
@@ -742,21 +755,6 @@ iframe {
   }
 }
 
-@media (max-width: 768px) {
-  .ipad-img-box {
-    display: flex;
-    width: 100vw;
-    align-items: flex-end;
-    max-height: 433px;
-  }
-  .ipad-img {
-    max-height: 433px;
-  }
-  .ipad-pro-img-box {
-    display: none;
-  }
-}
-
 @media (min-width: 2500px) {
   #main {
     padding-left: 200px;
@@ -767,7 +765,7 @@ iframe {
     padding-left: 0;
     align-items: center;
   }
-  #description {
+  .description {
     text-align: center;
   }
 }
