@@ -41,8 +41,8 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     document.querySelector(this.getAttribute('href')).scrollIntoView({
       behavior: 'smooth',
     })
-    // setTimeout(() => {
-    //   toggleLinks()
-    // }, 100)
+    setTimeout(() => {
+      toggleLinks()
+    }, 100)
   })
 })
