@@ -382,6 +382,7 @@ a:hover:before {
   padding-left: 26px;
   margin-left: 10px;
   font-size: 22px;
+  align-self: flex-start;
 }
 
 .section-card {
@@ -412,8 +413,8 @@ a:hover:before {
 
 .card-header a {
   text-decoration: none;
-  color: #f7f8f3;
-  border-bottom: 2px solid #b55a84;
+  color: #b55a84;
+  text-align: left;
 }
 
 .iframe-border {
@@ -446,6 +447,10 @@ iframe {
 
 .small-description {
   display: none;
+}
+
+figcaption {
+  font-style: italic;
 }
 
 .contact-container {
