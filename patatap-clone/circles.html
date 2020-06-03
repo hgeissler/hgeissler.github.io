@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>patatap clone</title>
+    <link rel="stylesheet" href="circles.css" />
+    <script src="howler.core.min.js"></script>
+    <script src="paper-full.min.js"></script>
+    <script type="text/paperscript" canvas="myCanvas">
+      var sounds = ['bubbles.mp3','clay.mp3','confetti.mp3','corona.mp3','dotted-spiral.mp3','flash-1.mp3','flash-2.mp3','flash-3.mp3','glimmer.mp3','moon.mp3','pinwheel.mp3','piston-1.mp3','piston-2.mp3','piston-3.mp3','prism-1.mp3','prism-2.mp3','prism-3.mp3','splits.mp3','squiggle.mp3','strike.mp3','suspension.mp3','timer.mp3','ufo.mp3','veil.mp3','wipe.mp3','zig-zag.mp3']
+      var keyData = {}
+      for (i = 0; i < 26; i++) {
+        var letter = (i+10).toString(36)
+        keyData[letter]= {
+          color: '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6),
+          sound: new Howl({
+            src: ['sounds/' + sounds[i]]
+          })
+        }
+      }
+
+      var circles = []
+
+      tool.onKeyDown = function(event) {
+        if (keyData[event.key]) {
+          var maxPoint = new Point(view.size.width, view.size.height)
+          var randomPoint = Point.random()
+          var point = maxPoint * randomPoint
+          var newCircle = new Path.Circle(point,500)
+          newCircle.fillColor = keyData[event.key].color
+          keyData[event.key].sound.play()
+          circles.push(newCircle)
+        }
+        return false;
+      }
+
+      function onFrame(event) {
+        for (var i = 0; i < circles.length; i++) {
+          circles[i].scale(.9);
+          circles[i].fillColor.hue += 1;
+          if (circles[i].area < 1) {
+            circles[i].remove()
+            circles.splice(i,1)
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="info-window">
+      <p id="info-text">
+        Press any letter key to start the app
+      </p>
+    </div>
+    <canvas id="myCanvas"></canvas>
+    <script>
+      let root = document.getRootNode()
+      let infoWindow = document.getElementById('info-window')
+      root.addEventListener('keypress', function () {
+        infoWindow.style.display = 'none'
+      })
+    </script>
+  </body>
+</html>
