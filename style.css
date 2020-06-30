@@ -82,7 +82,7 @@ body {
   box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.3);
   padding: 0;
   height: 64px;
-  background-color: #002839;
+  background-color: #002c3e;
 }
 
 .selectedNav {
@@ -376,10 +376,10 @@ a:hover:before {
   position: relative;
   height: 40px;
   line-height: 40px;
-  background-image: url(/img/link-24px.svg);
+  /* background-image: url(/img/link-24px.svg); */
   background-repeat: no-repeat;
   background-position: left center;
-  padding-left: 26px;
+  /* padding-left: 26px; */
   margin-left: 10px;
   font-size: 22px;
 }
@@ -398,15 +398,19 @@ a:hover:before {
 #theme-card {
   margin: 0 auto;
   max-width: 570px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
 #theme-card figure {
   max-width: 570px;
+  margin-top: 0;
 }
 
 #theme-card img {
   max-height: 312px;
   max-width: 100%;
-  margin: 0 auto 16px;
+  margin: 0 auto;
   border: 1px solid #173e4d;
 }
 
@@ -414,6 +418,7 @@ a:hover:before {
   text-decoration: none;
   color: #b55a84;
   text-align: left;
+  text-decoration: underline;
 }
 
 .iframe-border {
@@ -426,10 +431,6 @@ a:hover:before {
   max-width: 380px;
   height: 540px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.theme-container {
-  padding: 16px;
 }
 
 iframe {
@@ -450,6 +451,8 @@ iframe {
 
 figcaption {
   font-style: italic;
+  font-size: 16px;
+  color: #b55a84;
 }
 
 .contact-container {
