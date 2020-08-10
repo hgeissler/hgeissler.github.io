@@ -46,3 +46,17 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }, 100)
   })
 })
+
+const footer = document.querySelector('.footer')
+function checkPos() {
+  let windowY = window.scrollY
+  if (windowY < 100) {
+    footer.classList.add('is-visible')
+    footer.classList.remove('is-hidden')
+  } else {
+    footer.classList.add('is-hidden')
+    footer.classList.remove('is-visible')
+  }
+}
+
+window.addEventListener('scroll', checkPos)
