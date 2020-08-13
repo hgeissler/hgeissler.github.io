@@ -421,7 +421,11 @@ a:hover:before {
   max-height: 312px;
   max-width: 100%;
   margin: 0 auto;
-  border: 1px solid #173e4d;
+}
+
+#vsThemeImg {
+  cursor: pointer;
+  border: 2px solid #b55a84;
 }
 
 .card-header a {

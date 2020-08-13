@@ -60,3 +60,18 @@ function checkPos() {
 }
 
 window.addEventListener('scroll', checkPos)
+
+var vsThemeImage = document.getElementById('vsThemeImg')
+vsThemeImage.addEventListener('click', function () {
+  var win = window.open(
+    'https://marketplace.visualstudio.com/items?itemName=geisslerh.ayu-mirage-bold-italic',
+    '_blank'
+  )
+  if (win) {
+    //Browser has allowed it to be opened
+    win.focus()
+  } else {
+    //Browser has blocked it
+    alert('Please allow popups for this website')
+  }
+})
