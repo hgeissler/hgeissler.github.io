@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Familie: Weihnachts-Lose</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <v-app>
+        <v-main class="black">
+          <template>
+            <ul id="wire">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+
+            <h2>Lose ziehen</h2>
+
+            <v-layout justify-center>
+              <v-flex xs11 sm6 lg4>
+                <v-form class="white pa-4">
+                  <h3 class="headline mb-1">Gib dein Passwort ein:</h3>
+                  <v-text-field
+                    :type="'password'"
+                    name="input-password"
+                    label="Passwort"
+                    class="input-group--focused"
+                    v-model="userPW"
+                  ></v-text-field>
+
+                  <v-layout>
+                    <v-spacer></v-spacer>
+                    <v-btn color="error" @click="btnClick" :loading="loading">
+                      Dein Los ziehen
+                    </v-btn>
+                  </v-layout>
+                </v-form>
+
+                <v-alert
+                  type="warning"
+                  v-if="wrongPW"
+                  :value="true"
+                  class="ma-0"
+                  icon="info"
+                >
+                  Falsches Passwort!
+                </v-alert>
+                <v-alert
+                  icon="info"
+                  type="warning"
+                  v-if="apiError"
+                  :value="true"
+                  class="ma-0"
+                >
+                  Etwas ist schiefgegangen.
+                </v-alert>
+
+                <v-alert
+                  class="ma-0"
+                  icon="mood"
+                  v-if="showResult"
+                  color="error"
+                  :value="true"
+                >
+                  Hallo {{ name }}, du hast
+                  <span class="font-weight-bold">{{ lot }}</span> gezogen.
+                </v-alert>
+              </v-flex>
+            </v-layout>
+          </template>
+        </v-main>
+      </v-app>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
