@@ -181,7 +181,7 @@
                                     },
                                     [
                                       t._v(
-                                        '\n                Anke Marsolin\n              '
+                                        '\n                Astrid Mustermann\n              '
                                       ),
                                     ]
                                   ),
@@ -314,7 +314,7 @@
                                 a('v-icon', { staticClass: 'pb-1' }, [
                                   t._v('camera_alt'),
                                 ]),
-                                t._v('\n            A. Marsolin\n          '),
+                                t._v('\n            A. Mustermann\n          '),
                               ],
                               1
                             ),
@@ -822,7 +822,7 @@
                                         ),
                                         a('br'),
                                         t._v(
-                                          '\n                  E-mail: anke@marsolin.de '
+                                          '\n                  E-mail: Astrid@Mustermann.de '
                                         ),
                                         a('br'),
                                       ]),
@@ -929,7 +929,7 @@
                                             ),
                                             a('br'),
                                             t._v(
-                                              '\n                    Anke Marsolin Fotografie '
+                                              '\n                    Astrid Mustermann Fotografie '
                                             ),
                                             a('br'),
                                             t._v(
@@ -959,7 +959,7 @@
                                             a(
                                               'span',
                                               { staticClass: 'body-2' },
-                                              [t._v('by Anke Marsolin')]
+                                              [t._v('by Astrid Mustermann')]
                                             ),
                                           ]),
                                         ]),
